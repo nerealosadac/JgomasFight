@@ -1,0 +1,13 @@
+These are the strategy used:
+
+ALLIED:
+all medics
+- we use the configuration af all medic agents that drops medical packs when they reach the flag,calling the plan +followFlag.
+- we implemented the a plan to avoid the friendly fire ,called !safetoshoot.So if an agennts see an member of his squad between him and the enemies doesn.t shoot.
+
+AXIS:
+3 soldiers,4 fieldops
+- we used 3 soldiers agents that follow the aimed enemies until they kill him, implemented in the plan +!perform_aim_action and +!perform_look_action.
+- we increase the ammo threshold to 80.
+- we used 4 fieldops with the avoid friendly fire strategy 
+- decrease the patrolling radious to 20.
